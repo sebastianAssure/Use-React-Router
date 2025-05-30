@@ -1,14 +1,16 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Books from "./pages/BookS";
+import Books from "./pages/Books";
 import BookDetail from "./pages/BookDetail";
 import Navbar from "./components/Navbar";
 import NotFound from "./pages/NotFound";
+import Notification from "./components/Notification"
 
 function App() {
   return (
     <>
-    <Navbar/>
+     <Notification />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/books" element={<Books />} />

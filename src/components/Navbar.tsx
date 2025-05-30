@@ -1,16 +1,17 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink } from "react-router-dom";
+import TriggerButtonNavbar from "./TriggerButtonNavBar";
 
 function Navbar() {
   return (
     <nav className="bg-teal-600 text-white px-6 py-4 shadow">
-      <ul className="flex justify-center space-x-6 font-medium">
+      <ul className="flex justify-center space-x-5 font-medium">
         <li>
           <NavLink
             to="/"
             className={({ isActive }) =>
               isActive
-                ? 'underline underline-offset-4 text-white'
-                : 'hover:underline'
+                ? "underline underline-offset-4 text-white"
+                : "hover:underline"
             }
           >
             Home
@@ -21,28 +22,29 @@ function Navbar() {
             to="/books"
             className={({ isActive }) =>
               isActive
-                ? 'underline underline-offset-4 text-white'
-                : 'hover:underline'
+                ? "underline underline-offset-4 text-white"
+                : "hover:underline"
             }
           >
             Books
           </NavLink>
         </li>
-          <li>
+        <li>
           <NavLink
             to="/books-deprecated"
             className={({ isActive }) =>
               isActive
-                ? 'underline underline-offset-4 text-white'
-                : 'hover:underline'
+                ? "underline underline-offset-4 text-white"
+                : "hover:underline"
             }
           >
             Test
           </NavLink>
         </li>
+        <TriggerButtonNavbar />
       </ul>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
