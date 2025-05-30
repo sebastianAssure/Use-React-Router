@@ -1,4 +1,3 @@
-// components/Notification.tsx
 import { useContext } from "react";
 import { NotificationContext } from "../context/NotificationContext";
 import { IoIosAlert } from "react-icons/io";
